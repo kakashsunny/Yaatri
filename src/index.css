@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --saffron: #E85D04;
+    --gold: #FFD60A;
+    --deep-green: #1B4332;
+    --dark-bg: #0A0A0F;
+    --card-bg: #13131A;
+    --card-border: rgba(232, 93, 4, 0.2);
+  }
+
+  body {
+    background-color: #0A0A0F;
+    color: #F1F5F9;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-kannada {
+  font-family: 'Noto Sans Kannada', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(19, 19, 26, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-glow {
+  background: rgba(19, 19, 26, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(232, 93, 4, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(232, 93, 4, 0.08);
+}
+
+/* Subtle background grid */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Custom leaflet popup overrides for dark theme */
+.leaflet-popup-content-wrapper {
+  background: #13131A !important;
+  color: #F1F5F9 !important;
+  border: 1px solid rgba(232, 93, 4, 0.4) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.7) !important;
+}
+
+.leaflet-popup-tip {
+  background: #13131A !important;
+  border-top: 1px solid rgba(232, 93, 4, 0.4) !important;
+}
+
+.leaflet-container {
+  font-family: inherit !important;
+  background: #0A0A0F !important;
+}
+
+/* Pulse animation for CTA */
+@keyframes saffronGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(232, 93, 4, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(232, 93, 4, 0.65);
+  }
+}
+
+.glow-saffron {
+  animation: saffronGlow 2.5s infinite ease-in-out;
+}

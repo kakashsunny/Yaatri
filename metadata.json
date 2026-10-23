@@ -1,0 +1,8 @@
+{
+  "name": "Yaatri - Karnataka AI Travel Planner",
+  "description": "AI-powered travel planner for Karnataka, India generating personalized itineraries with Kannada bilingual support, local food picks, and interactive route maps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
