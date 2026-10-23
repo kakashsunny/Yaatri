@@ -302,7 +302,7 @@ Yaatri supports journey originations across Karnataka's distinct geographical re
 
 ## 📹 Demo
 
-- 🌐 **Live Web Application**: [https://yaatri-karnataka.vercel.app](https://yaatri-karnataka.vercel.app)
+- 🌐 **Live Web Application**: [https://yaatri-karnataka.vercel.app](https://yaarthi.vercel.app/)
 - 🎥 **Video Walkthrough**: `[Demo Video Link Placeholder — 3-Minute Showcase]`
 
 ---
