@@ -31,9 +31,10 @@ export const MapView: React.FC<MapViewProps> = ({ locations, lang, selectedDay, 
           scrollWheelZoom: false,
         });
 
-        // Stadia Maps Dark Tiles (Free, no watermark)
-        L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; Stadia Maps &copy; OpenStreetMap contributors',
+        // CARTO Dark Matter Tiles (High-contrast dark luxury aesthetic, 100% free, no API key required)
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+          subdomains: 'abcd',
           maxZoom: 20,
         }).addTo(map);
 
@@ -41,7 +42,7 @@ export const MapView: React.FC<MapViewProps> = ({ locations, lang, selectedDay, 
         layerGroupRef.current = layerGroup;
         mapInstanceRef.current = map;
       } catch (err) {
-        console.warn('Leaflet map initialization notice:', err);
+        // Safe initialization handling
       }
     }
 
@@ -147,7 +148,7 @@ export const MapView: React.FC<MapViewProps> = ({ locations, lang, selectedDay, 
         mapInstanceRef.current.panTo(targetLatLng, { animate: true, duration: 0.8 });
         targetMarker.openPopup();
       } catch (err) {
-        console.warn('Map marker focus notice:', err);
+        // Safe marker pan handling
       }
     }
   }, [activeLocationIndex]);
@@ -159,7 +160,7 @@ export const MapView: React.FC<MapViewProps> = ({ locations, lang, selectedDay, 
         try {
           mapInstanceRef.current.remove();
         } catch (e) {
-          console.warn('Map cleanup notice:', e);
+          // Safe map instance cleanup
         }
         mapInstanceRef.current = null;
       }

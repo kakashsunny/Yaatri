@@ -42,7 +42,7 @@ Yaatri (ಯಾತ್ರಿ) is a production-grade, dark-luxury AI travel planner
 - 🧠 **AI-Generated Personalized Itineraries**: Harnesses Google Gemini API with structured JSON schemas to create bespoke schedules based on origin hub, duration, pace, and interests.
 - 🗣️ **Full Bilingual Support (English + ಕನ್ನಡ)**: Instant, zero-latency toggling between English and native Noto Sans Kannada script across titles, descriptions, insider tips, and regional food suggestions.
 - 💰 **Budget-Aware Day Planning (₹500 to ₹10,000+/day)**: Accurate per-day cost projections ranging from backpacker dorms and street food to royal heritage palaces and luxury stays.
-- 🗺️ **Interactive Route Map with Stadia Dark Tiles**: Leaflet.js-powered dark geospatial map with custom saffron pins, numbered stop indicators, popup tips, and route path polylines without commercial watermarks.
+- 🗺️ **Interactive Route Map with CARTO Dark Matter**: Leaflet.js-powered dark geospatial map with custom saffron pins, numbered stop indicators, popup tips, and route path polylines without commercial watermarks.
 - 💎 **Hidden Gems Beyond Tourist Traps**: Recommends authentic offbeat spots—coracle rides at Sanapur Lake, Agastya lake cliff paths, and hidden Western Ghats waterfalls—alongside iconic UNESCO monuments.
 - 🏛️ **30+ Karnataka Cities & Districts Supported**: Deep local coverage across Old Mysore, Coastal Karavali, Malenadu, Kalyana Karnataka, and Kittur Karnataka.
 - 📱 **100% Mobile Responsive**: Fluid single-column responsive layout, touch-friendly day slider tabs, and persistent floating language controls.
@@ -64,7 +64,7 @@ Yaatri (ಯಾತ್ರಿ) is a production-grade, dark-luxury AI travel planner
 | **Language & Typing** | **TypeScript** | Strict compile-time safety across itinerary schemas and API contracts |
 | **Styling & Theme** | **Tailwind CSS v4** | Dark luxury aesthetic (`#0A0A0F`, `#13131A`, `#E85D04` saffron, `#FFD60A` gold) |
 | **AI Reasoning Engine** | **Google Gemini API (`@google/genai`)** | Gemini 1.5 Flash / Gemini 3.8 Flash model with JSON schema enforcement |
-| **Geospatial & Mapping** | **Leaflet.js + Stadia Maps** | Alidade Smooth Dark tiles, custom SVG markers, and dynamic bounding boxes |
+| **Geospatial & Mapping** | **Leaflet.js + CARTO Dark Matter** | High-contrast dark matter tiles, custom SVG markers, and dynamic bounding boxes |
 | **Typography** | **Google Fonts** | `Plus Jakarta Sans` for modern display & `Noto Sans Kannada` for authentic regional script |
 | **Offline Export** | **jsPDF** | Client-side multi-page PDF generation with custom brand layout and packing lists |
 | **Language State** | **React Context & State Hooks** | Instant bilingual English $\leftrightarrow$ Kannada localization without page reloads |
@@ -325,7 +325,7 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 ## 🙏 Acknowledgements
 
 - **Google Gemini API**: For intelligent reasoning, contextual parsing, and multilingual generation.
-- **Stadia Maps & OpenStreetMap**: For providing pristine, high-contrast dark map tiles without commercial watermarks.
+- **CARTO & OpenStreetMap**: For providing pristine, high-contrast dark map tiles without commercial watermarks.
 - **Leaflet.js**: For lightweight, responsive client-side geospatial rendering.
 - **Google Fonts**: For providing `Noto Sans Kannada` to render authentic Kannada ligatures.
 - **Vercel**: For seamless serverless deployment and edge delivery.
